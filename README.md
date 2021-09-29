@@ -46,5 +46,8 @@ run
 ```
 detectnet --threshold=0.35 --model=models/rsp/ssd-mobilenet.onnx --labels=models/rsp/labels.txt --input-blob=input_0 --output-cvg
 ```
-# Result
+# In the End
 The detection is not bad but there are plenty of room for improvement. For example, the training for each class only uses 100 picture and 30 epochs. If using more than 1000 pictures with various background, e.g., indoor, outdoor, bright, dark, colorful background, the percentage of detection would significantly increase. 
+
+If interested, one can take look at this transfer learning for the same idea:
+https://towardsdatascience.com/transfer-learning-rock-paper-scissors-classifier-45a148224da9
