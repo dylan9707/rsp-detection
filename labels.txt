@@ -1,4 +1,0 @@
-BACKGROUND
-Rock
-Scissor
-Paper
