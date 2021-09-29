@@ -1,3 +1,4 @@
+# acknowledgement
 This is a short homework project practices the NVIDIA "GETTING START WITH JETSON NANO" course https://courses.nvidia.com/courses/course-v1:DLI+S-RX-02+V2/about
 and 
 "Hello AI world" by Dusty-nv
@@ -44,3 +45,6 @@ cd /jetson-inference/python/training/detection/ssd
 run
 ```
 detectnet --threshold=0.35 --model=models/rsp/ssd-mobilenet.onnx --labels=models/rsp/labels.txt --input-blob=input_0 --output-cvg
+```
+# Result
+The detection is not bad but there are plenty of room for improvement. For example, the training for each class only uses 100 picture and 30 epochs. If using more than 1000 pictures with various background, e.g., indoor, outdoor, bright, dark, colorful background, the percentage of detection would significantly increase. 
